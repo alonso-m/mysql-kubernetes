@@ -1,0 +1,15 @@
+apiVersion: v1                                                                                                                                          
+kind: PersistentVolume                                                                                                                                  
+metadata:                                                                                                                                               
+  name: mysql-pv                                                                                                                                       
+  labels:                                                                                                                                               
+    app: mysql                                                                                                                                         
+spec:                                                                                                                                                   
+  storageClassName: manual                                                                                                                              
+  capacity:                                                                                                                                             
+    storage: 1Gi                                                                                                                                      
+  accessModes:                                                                                                                                          
+    - ReadWriteMany                                                                                                                                     
+  nfs:                                                                                                                                                  
+    path: /export/ssd/mysql
+    server: node06
