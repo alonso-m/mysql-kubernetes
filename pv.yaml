@@ -11,5 +11,5 @@ spec:
   accessModes:                                                                                                                                          
     - ReadWriteMany                                                                                                                                     
   nfs:                                                                                                                                                  
-    path: /zfs/encrypted/application-data/mysql
+    path: /mnt/kingston/application-data/mysql
     server: node00
